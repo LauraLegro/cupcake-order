@@ -1,0 +1,40 @@
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cupcake Bakery Order Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Order Your Cupcakes</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="customerName">Your Name:</label>
+          <input type="text" id="customerName" required />
+        </div>
+        <div class="form-group">
+          <label for="cupcakeFlavor">Cupcake Flavor:</label>
+          <select id="cupcakeFlavor" required>
+            <option value="">Select a flavor</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="red velvet">Red Velvet</option>
+            <option value="lemon">Lemon</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" max="100" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Place Order" />
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
